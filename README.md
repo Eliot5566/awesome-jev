@@ -69,6 +69,7 @@ Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 - [jev-axi](https://github.com/shiftynick/jev-axi) - CLI for picking, rating, checking, ranking, triaging, and guarding from the shell.
 - [jev-dsl](https://github.com/inanna-malick/jev-dsl) - Early-alpha Haskell DSL that encodes typed question packets and decodes answers; HTTP transport is left to the caller.
 - [jev-mcp](https://github.com/blakestone-x/jev-mcp) - MCP server exposing classify, score, check, match, and screen tools.
+- [jev-mcp](https://github.com/BYK/jev-mcp) - An eval-first MCP server for Jev, that returns typed judgments (noul, choice, score) with probabilities instead of generated text.
 - [jev-shell-history](https://github.com/mrnugget/jev-shell-history) - Ranks existing zsh history entries for inline completion; accepting a suggestion does not execute it.
 - [Jevbridge](https://github.com/gamesonrblx/Jevbridge) - ACP/MCP adapter for using Jev alongside coding and chat models.
 - [jevclient](https://github.com/AboveColin/jevclient) - Async Python client for typed Jev questions and probabilities.
@@ -93,6 +94,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [is-malicious](https://github.com/luantak/is-malicious) - Scans source, configuration, build, and CI files with Jev, then reports suspicious behavior and implicated lines before the code is run.
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Per-turn Codex model, reasoning, and speed-mode routing.
 - [jev-guard](https://github.com/leepokai/jev-guard) - Cross-agent tool-call risk scoring with allow, ask, and deny outcomes.
+- [jev-pref](https://github.com/doeixd/jev-pref) - Linter that has Jev check code changes against project preferences from `jev-pref.json` and feeds findings back to coding agents.
 - [jev-review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
 - [jev-review MCP plugin](https://github.com/NiazMorshed2007/jev-review) - Local-first continuous software-quality review for coding agents.
 - [jev-router](https://github.com/gargpratyush/jev-router) - Chooses a model for each fresh Claude Code or Codex turn while wrapping the existing CLI.
@@ -112,6 +114,7 @@ These tools select what reaches a model. Preserving retained text verbatim does 
 - [fast-dev-compaction](https://github.com/leonaaardob/fast-dev-compaction) - Codex port that restores Jev-selected verbatim history around native session compaction.
 - [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) - Claude Code plugin and library that score tool-call/result pairs for deletion or truncation while retaining selected text verbatim.
 - [pi-fast-jev-compaction](https://github.com/joelhooks/pi-fast-jev-compaction) - Pi extension that prunes stale tool history and leaves summary compaction to Pi when pruning is insufficient.
+- [pi-jev-compact](https://github.com/ilkerulusoy/pi-jev-compact) - Selective, verbatim context compaction for Pi using Jev model.
 - [pi-jev-context](https://github.com/kevinpita/pi-jev-context) - Opt-in Pi extension that filters older messages from model requests while preserving the original session history.
 - [winnow](https://github.com/GhalebDweikat/winnow) - Judges tool results before admitting them into Claude Code context.
 - [yoshi](https://github.com/compozy/yoshi) - Experimental Claude Code/Codex proxy that uses Jev to prune request context while preserving tool-call protocol structure.
@@ -126,8 +129,6 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jev-voice-browser](https://github.com/moritzkremb/jev-voice-browser) - Maps partial speech transcripts to browser intents and observed targets, with code deciding whether to act, wait, or ask.
 - [mobile-jev](https://github.com/droidrun/mobile-jev) - Android agent using Mobilerun observations and bounded Jev actions; execute mode controls a real device, while the published Uber demo stops before booking.
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer-use experiment using OCR plus bounded Jev action selection.
-- [jev-mcp](https://github.com/BYK/jev-mcp) - An eval-first MCP server for Jev, that returns typed judgments (noul, choice, score) with probabilities instead of generated text.
-- [pi-jev-compact](https://github.com/ilkerulusoy/pi-jev-compact) - Selective, verbatim context compaction for Pi using Jev model.
 
 ## Routing, data, and workflows
 
