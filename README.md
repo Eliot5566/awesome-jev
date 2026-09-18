@@ -43,6 +43,7 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 - [jev](https://github.com/dannote/jev) - Elixir/OTP client designed around GenServer replies and pattern matching.
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - Idiomatic Go SDK for the TypeSafe API.
 - [laravel-typesafe-jev](https://github.com/Butochnikov/laravel-typesafe-jev) - Laravel integration with typed responses, async requests, and testing fakes.
+- [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex reranker and router: Jev scores each retrieved passage and picks which query engine or tool handles a query.
 - [zod-jev](https://github.com/jomatsu/zod-jev) - Pairs local Zod shape validation with Jev semantic validation.
 - [jev-mcp](https://github.com/blakestone-x/jev-mcp) - MCP server exposing classify, score, check, match, and screen tools.
 - [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) - MCP connector that gives agents access to Jev decisions.
