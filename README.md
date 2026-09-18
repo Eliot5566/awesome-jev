@@ -125,6 +125,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jev-voice-browser](https://github.com/moritzkremb/jev-voice-browser) - Maps partial speech transcripts to browser intents and observed targets, with code deciding whether to act, wait, or ask.
 - [mobile-jev](https://github.com/droidrun/mobile-jev) - Android agent using Mobilerun observations and bounded Jev actions; execute mode controls a real device, while the published Uber demo stops before booking.
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer-use experiment using OCR plus bounded Jev action selection.
+- [jev-mcp](https://github.com/BYK/jev-mcp) - An eval-first MCP server forJev, that returns typed judgments (noul, choice, score) with probabilities instead of generated text.
 
 ## Routing, data, and workflows
 
