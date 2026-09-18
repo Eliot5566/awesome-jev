@@ -103,6 +103,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [skillbox](https://github.com/kitze/skillbox) - Self-hosted skill library with optional Jev relevance recommendations over an authorized catalog.
 - [skillranker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks agent skills against live session context and can abstain.
 - [supercov](https://github.com/supercorp-ai/supercov) - Scores source files so coding agents can prioritize code-quality work.
+- [wakegate](https://github.com/shitianfang/wakegate) - Experimental gate where Jev decides whether a timer or incoming event is worth resuming a sleeping agent's LLM; code skips only when Jev is confident and always wakes on user messages, errors, and a skip limit.
 
 ## Context and compaction
 
