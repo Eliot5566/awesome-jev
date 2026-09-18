@@ -63,6 +63,7 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 - [Canny](https://github.com/qkal/Canny) - Evidence ledger that challenges unsupported "done" claims from coding agents.
 - [jev-guard](https://github.com/leepokai/jev-guard) - Cross-agent tool-call risk scoring with allow, ask, and deny outcomes.
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer-use experiment using OCR plus bounded Jev action selection.
+- [jev-pref](https://github.com/doeixd/jev-pref) - Linter that has Jev check code changes against project preferences from `jev-pref.json` and feeds findings back to coding agents.
 
 ## Routing, data, and workflows
 
