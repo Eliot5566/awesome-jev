@@ -97,6 +97,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [openjev](https://github.com/zhihz/openjev) - Local bilingual probability decisions from context, questions, and candidate answers.
 - [Verdict-open-jev](https://github.com/Heman10x-NGU/Verdict-open-jev) - ModernBERT decision engine with calibrated uncertainty and a WebGPU playground.
 - [parallelConstraintDecoding](https://github.com/stephanj/parallelConstraintDecoding) - Java and llama.cpp experiments in parallel constrained decoding.
+- [LitJev](https://github.com/zhengxuyu/litjev) - Reproduction of Jev that turns any Qwen model into a fast decision model, serving the same `/v1/systemone` schema (Choice, Score, Noul) with no training and no generated answer text.
 
 ## Evaluation and calibration
 
