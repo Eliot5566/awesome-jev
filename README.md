@@ -90,6 +90,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [Canny](https://github.com/qkal/Canny) - Evidence ledger that challenges unsupported "done" claims from coding agents.
 - [commit-miner](https://github.com/devanshbatham/commit-miner) - Classifies Git diffs and commit messages into change types and candidate security-fix/CWE labels for inspection.
 - [foreman](https://github.com/thruwire/foreman) - Software-factory supervisor that uses Jev to keep coding agents on task.
+- [is-malicious](https://github.com/luantak/is-malicious) - Scans source, configuration, build, and CI files with Jev, then reports suspicious behavior and implicated lines before the code is run.
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Per-turn Codex model, reasoning, and speed-mode routing.
 - [jev-guard](https://github.com/leepokai/jev-guard) - Cross-agent tool-call risk scoring with allow, ask, and deny outcomes.
 - [jev-review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
