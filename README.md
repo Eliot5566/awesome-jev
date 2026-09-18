@@ -52,6 +52,7 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 
 ## Agents, coding, and guardrails
 
+- [is-malicious](https://github.com/luantak/is-malicious) - Scans source, configuration, build, and CI files with Jev, then reports suspicious behavior and implicated lines before the code is run.
 - [jev-review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
 - [jev-review MCP plugin](https://github.com/NiazMorshed2007/jev-review) - Local-first continuous software-quality review for coding agents.
 - [foreman](https://github.com/thruwire/foreman) - Software-factory supervisor that uses Jev to keep coding agents on task.
