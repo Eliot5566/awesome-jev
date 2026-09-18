@@ -140,6 +140,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) - Kuru/Monad trading experiment with optional Jev buy/sell decisions; defaults to a mock model and dry-runs without a private key, but configured execution can place real orders.
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive choice over taxonomies larger than Jev's direct option limit.
 - [jevlogs](https://github.com/reachjalil/jevlogs) - OpenTelemetry log triage before more expensive analysis.
+- [jevql](https://github.com/kylemclaren/jevql) - psql-shaped client and Go/TypeScript/Python SDKs for vanilla Postgres where Jev makes Noul, Choice, and Score judgements about individual table rows after the plain SQL has run on the server, and the client applies the resulting filter, sort, or group.
 - [jevsql](https://github.com/EugeneBoondock/jevsql) - SQL-like filtering, ranking, classification, and scoring with natural-language predicates.
 - [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex reranker and selector using Jev Score and Choice answers, with configurable confidence handling.
 - [n8n-nodes-typesafe-jev](https://github.com/n3ndor/n8n-nodes-typesafe-jev) - Community n8n node for asking multiple typed questions over workflow state.
