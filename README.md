@@ -65,6 +65,7 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 
 - [advocaat](https://github.com/pithings/advocaat) - Small type-safe client for asking Jev questions about datasets.
+- [hunch](https://github.com/carldaws/hunch) - Probabilistic control flow for Ruby: `if Hunch.likely?("fraudulent", given: order)` branches on a typed Jev answer, with graded predicates from `possibly?` to `definitely?`.
 - [jev](https://github.com/dannote/jev) - Elixir/OTP client designed around GenServer replies and pattern matching.
 - [jev-axi](https://github.com/shiftynick/jev-axi) - CLI for picking, rating, checking, ranking, triaging, and guarding from the shell.
 - [jev-dsl](https://github.com/inanna-malick/jev-dsl) - Early-alpha Haskell DSL that encodes typed question packets and decodes answers; HTTP transport is left to the caller.
