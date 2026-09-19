@@ -222,6 +222,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval) - Chinese/English retrieval evaluation comparing Jev reranking with lexical, embedding, and fusion baselines, including judge-circularity analysis.
 - [jevcal](https://github.com/abhixhek/jevcal) - Fits and drift-checks confidence thresholds against labeled data.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - LLM gateway that mimics the System One output shape for comparison work.
+- [jev-decision-benchmarks](https://github.com/baibizhe/jev-decision-benchmarks) - Independent evaluation of Jev on MetaTool, When2Call, and BFCL V4 agent decision tasks, focusing on tool selection, abstention, and tool-use decisions. Compared with Claude, Qwen, GPT, it shows strong tool-selection performance.
 
 ## Guides and cookbooks
 
