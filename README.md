@@ -146,6 +146,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [HA-Jev](https://github.com/AboveColin/HA-Jev) - Home Assistant integration exposing typed answers as sensors, automation actions, and an Assist conversation agent.
 - [hono-jev-router](https://github.com/yusukebe/hono-jev-router) - Routes Hono HTTP requests by meaning.
 - [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Streaming filter and scorer for Parquet and JSONL datasets.
+- [jev-logtriage](https://github.com/jyatesdotdev/jev-logtriage) - Jev scores collapsed log batches for noise, severity, and whether an operator should act. Code maps the answers to suppress, watch, review, notify, or page. Nothing is executed.
 - [jev-reranker](https://github.com/hotchpotch/jev-reranker) - Retrieval and RAG: uses Jev Noul judgments to assess retrieved documents for relevance and usefulness as answer evidence, then sorts results and optionally filters them using a configurable threshold.
 - [jev-reviewer](https://github.com/choxos/jev-reviewer) - Research-document extraction aid where Jev selects and verifies source lines for verbatim quotes; findings require human review and are not clinical decisions.
 - [jev-search](https://github.com/superagents-lab/jev-search) - Uses Jev to select search sources and rank Search1API results, returning source links and snippets.
