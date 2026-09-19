@@ -197,6 +197,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) - Jev-compatible API endpoint backed by open models and prefill-only inference.
 - [openvons](https://github.com/genai-craft/openvons) - Open decision layer for finite options across text, images, and Japanese voice commands.
 - [parallelConstraintDecoding](https://github.com/stephanj/parallelConstraintDecoding) - Java and llama.cpp experiments in parallel constrained decoding.
+- [PlayJev](https://github.com/OmniJev/PlayJev) - Open 0.8B vision-language model that reads a 448 px game frame and returns one move from the game's typed option list with a probability on each, one forward pass and no generated text; the game loop executes the argmax, the confidence gates an optional handover to a search program, and the weights and a ten-game browser demo are public.
 - [reflex](https://github.com/kshetrajna12/reflex) - Open-model decision engine with shared-state inference, isolated question branches, and a WebGPU demo; browser and Python configurations differ.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Formerly OpenJev: an independent study of typed option readout from frozen open models, with shared-prefix experiments and a WebGPU demo.
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Transforms compatible open-model logits into typed decisions without a separately trained classifier head; model compatibility is constrained.
