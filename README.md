@@ -214,6 +214,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [Janus](https://github.com/FirasSX914/Janus) - Measures when to use Jev versus other models and routes accordingly.
 - [jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study) - Independent synthetic-task study of Jev 1.13.0 framing sensitivity and failures, with raw responses and offline report checks.
 - [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) - Reproducible evaluation for calibration, selective risk, and latency.
+- [jev-decision-benchmarks](https://github.com/baibizhe/jev-decision-benchmarks) - Independent evaluation of Jev on MetaTool, When2Call, and BFCL V4 agent decision tasks, focusing on tool selection, abstention, and tool-use decisions. Includes comparison tables against Claude, Qwen, and GPT models.
 - [jev-eval](https://github.com/4esv/jev-eval) - Independent Jev versus GPT-5.6 Terra comparison on three labeled classification tasks, reporting accuracy, calibration, latency, and cost.
 - [jev-eval-agent](https://github.com/vinilana/jev-eval-agent) - Compares LLM tool selection with Jev routing in a personal-assistant harness containing 100 mocked tools.
 - [jev-korean-benchmark](https://github.com/mahlernim/jev-korean-benchmark) - Small Korean/English sample study with recorded responses, including medical-text questions; not a clinical validation.
@@ -222,7 +223,6 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval) - Chinese/English retrieval evaluation comparing Jev reranking with lexical, embedding, and fusion baselines, including judge-circularity analysis.
 - [jevcal](https://github.com/abhixhek/jevcal) - Fits and drift-checks confidence thresholds against labeled data.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - LLM gateway that mimics the System One output shape for comparison work.
-- [jev-decision-benchmarks](https://github.com/baibizhe/jev-decision-benchmarks) - Independent evaluation of Jev on MetaTool, When2Call, and BFCL V4 agent decision tasks, focusing on tool selection, abstention, and tool-use decisions. Compared with Claude, Qwen, GPT, it shows strong tool-selection performance.
 
 ## Guides and cookbooks
 
