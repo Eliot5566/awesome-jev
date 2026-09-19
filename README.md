@@ -156,6 +156,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 ## Games, robotics, and interactive demos
 
 - [heist-one](https://github.com/AbdelStark/heist-one) - Browser stealth game where Jev judges guards while deterministic code owns the world.
+- [jev-canvas](https://github.com/gaborishka/jev-canvas) - Voice and finger-pointing control of a tldraw canvas: Jev picks the action, target shape and place from each partial transcript plus the fingertip position; deterministic code applies thresholds and executes the edit.
 - [jev-drone](https://github.com/RomanSlack/jev-drone) - Simulated MuJoCo quadrotor with Jev making slower tactical judgments from processed camera observations; deterministic code controls flight.
 - [jev-experiments](https://github.com/dabit3/jev-experiments) - Collection of inspectable Jev demos, including scripted support conversations with typed intent, escalation, and suggested-response decisions.
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js driving simulation where Jev chooses among candidate paths and speeds while local code handles vehicle dynamics and geometry.
