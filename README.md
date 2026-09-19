@@ -101,6 +101,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [jev-review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
 - [jev-review MCP plugin](https://github.com/NiazMorshed2007/jev-review) - Local-first continuous software-quality review for coding agents.
 - [jev-router](https://github.com/gargpratyush/jev-router) - Chooses a model for each fresh Claude Code or Codex turn while wrapping the existing CLI.
+- [jev-scout](https://github.com/kierandotai/jev-scout) - MCP server that scores an agent's every search query, result, and fetched page for relevance and credibility, with session budgets, SSRF-guarded fetching, and a live decision dashboard.
 - [jevwire](https://github.com/Brainwires/jevwire) - MCP tools, an embeddable decision library, and advisory or restrictive Claude Code hooks; judgments do not grant native permissions.
 - [opencode-jev-orchestrator](https://github.com/aaronshaf/opencode-jev-orchestrator) - Keeps an OpenCode parent model fixed and uses Jev difficulty judgments to delegate harder turns to temporary subagents.
 - [perch](https://github.com/lakeday-org/perch) - Semantic code linter that evaluates code units against configurable Jev questions.
@@ -217,6 +218,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [jev-eval-agent](https://github.com/vinilana/jev-eval-agent) - Compares LLM tool selection with Jev routing in a personal-assistant harness containing 100 mocked tools.
 - [jev-korean-benchmark](https://github.com/mahlernim/jev-korean-benchmark) - Small Korean/English sample study with recorded responses, including medical-text questions; not a clinical validation.
 - [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) - Measures whether ORDER BY over a Jev probability is defensible (inversion rate, Score ordinality against a human grade, calibration, wording invariants, sort-key ties) under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows a DuckDB extension's default 40-row batching fails the ranking gate that one row per request passes.
+- [jev-scout golden-set study](https://github.com/kierandotai/jev-scout/blob/main/docs/accuracy/2026-09-19-jev-golden-set-study.md) - Hand-labeled 25-item search-triage study with pinned rubric versions and a drift baseline; reports 88% relevance and 96% credibility with all four misses decomposed.
 - [jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval) - Chinese/English retrieval evaluation comparing Jev reranking with lexical, embedding, and fusion baselines, including judge-circularity analysis.
 - [jevcal](https://github.com/abhixhek/jevcal) - Fits and drift-checks confidence thresholds against labeled data.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - LLM gateway that mimics the System One output shape for comparison work.
