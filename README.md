@@ -127,13 +127,13 @@ These tools select what reaches a model. Preserving retained text verbatim does 
 
 These projects can operate real browsers or devices when enabled. Published demos have task-specific success criteria and do not establish general reliability.
 
+- [BrowserClaw](https://github.com/GoldenLoaf24h/browserclaw) - Zero-lock, session-preserving Chrome MCP server that couples a local Jev System One semantic micro-loop (`chrome_act_toward_goal`) with an 85%+ pruned DOM tree (Shadow DOM & iframe pierced), dispatching native CDP events (`isTrusted: true`) on active logged-in sessions without focus theft.
 - [jev-browser](https://github.com/jkudish/jev-browser) - Browser-use experiment powered by Jev decisions.
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Codex browser skill that uses Jev for navigation and target selection while Codex handles text entry and outcome verification.
 - [jev-ultrafast](https://github.com/browser-use/jev-ultrafast) - Browser agent where Jev selects an operation and compatible DOM target, and a separate LLM supplies typed text.
 - [jev-voice-browser](https://github.com/moritzkremb/jev-voice-browser) - Maps partial speech transcripts to browser intents and observed targets, with code deciding whether to act, wait, or ask.
 - [mobile-jev](https://github.com/droidrun/mobile-jev) - Android agent using Mobilerun observations and bounded Jev actions; execute mode controls a real device, while the published Uber demo stops before booking.
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer-use experiment using OCR plus bounded Jev action selection.
-- [BrowserClaw](https://github.com/GoldenLoaf24h/browserclaw) - Zero-lock, session-preserving Chrome MCP server that couples a local Jev System One semantic micro-loop (`chrome_act_toward_goal`) with an 85%+ pruned DOM tree (Shadow DOM & iframe pierced), dispatching native CDP events (`isTrusted: true`) on active logged-in sessions without focus theft.
 
 ## Routing, data, and workflows
 
