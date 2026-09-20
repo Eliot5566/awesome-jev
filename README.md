@@ -248,6 +248,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) - Broader TypeSafe and System One ecosystem list.
 - [OmniJev/awesome-jev](https://github.com/OmniJev/awesome-jev) - Papers, open reproductions, independent evaluations, and technical lineage.
 - [awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) - CC0, awesome-lint clean, sorted by what you would install, with a short know-before-you-build section on the limits.
+- [MrJev/awesome-jev](https://github.com/MrJev/awesome-jev) - Selective list with a 10-star bar and hands-on reviews of each tool at mrjev.com.
 
 ## Contributing
 
