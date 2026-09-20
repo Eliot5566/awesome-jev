@@ -139,6 +139,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [pi-warden](https://github.com/DevMortimer/pi-warden) - Pi extension that judges rule compliance, risky actions, stuck loops, and completion claims; enforcement depends on the hook and policy.
 - [skillbox](https://github.com/kitze/skillbox) - Self-hosted skill library with optional Jev relevance recommendations over an authorized catalog.
 - [skillranker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks agent skills against live session context and can abstain.
+- [slop-grader](https://github.com/lukstei/slop-grader) - Rule-based text grader that uses Jev scores and line-by-line flags to audit documents against custom rulesets and guide an AI agent to auto-fix violations.
 - [supercov](https://github.com/supercorp-ai/supercov) - Scores source files so coding agents can prioritize code-quality work.
 - [wakegate](https://github.com/shitianfang/wakegate) - Experimental gate where Jev decides whether a timer or incoming event is worth resuming a sleeping agent's LLM; code skips only when Jev is confident and always wakes on user messages, errors, and a skip limit.
 
