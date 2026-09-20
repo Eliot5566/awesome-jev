@@ -211,6 +211,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js driving simulation where Jev chooses among candidate paths and speeds while local code handles vehicle dynamics and geometry.
 - [JevScape](https://github.com/Skyvern-AI/jevscape) - RuneBench-based RuneScape harness that maps Jev choices to a bounded game-action catalog and records tick-level results.
 - [killmyidea](https://github.com/monteduro/killmyidea) - Startup-idea evaluator that chooses kill, fix, or ship.
+- [Soupbase](https://github.com/spoonnotfound/soupbase) - Jev `Choice` judgments answer lateral-thinking puzzle questions and assess proposed solutions, while application code requires supported facts, a coherent explanation, and sufficient confidence before marking a puzzle solved.
 - [tsai-sc](https://github.com/phyous/tsai-sc) - Original StarCraft shareware controlled with recorded Jev action probabilities.
 - [typesafe-mario](https://github.com/fhshaik/typesafe-mario) - Super Mario Bros. agent choosing actions from structured emulator state.
 - [typesafe-snake](https://github.com/sorrycc/typesafe-snake) - Snake autoplayer with one typed decision per tick and code-generated legal moves.
