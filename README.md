@@ -208,6 +208,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [openvons](https://github.com/genai-craft/openvons) - Open decision layer for finite options across text, images, and Japanese voice commands.
 - [parallelConstraintDecoding](https://github.com/stephanj/parallelConstraintDecoding) - Java and llama.cpp experiments in parallel constrained decoding.
 - [PlayJev](https://github.com/OmniJev/PlayJev) - Open 0.8B vision-language model that reads a 448 px game frame and returns one move from the game's typed option list with a probability on each, one forward pass and no generated text; the game loop executes the argmax, the confidence gates an optional handover to a search program, and the weights and a ten-game browser demo are public.
+- [poorjev](https://github.com/rupeshpoojary9/poorjev) - Local-first reproduction of the Choice/Score/Noul interface on commodity zero-shot NLI models, adding temperature scaling and conformal abstention; ships a reproducible calibration eval (ECE 0.170 to 0.071 on its own labeled set) and runs offline with no API key.
 - [reflex](https://github.com/kshetrajna12/reflex) - Open-model decision engine with shared-state inference, isolated question branches, and a WebGPU demo; browser and Python configurations differ.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Formerly OpenJev: an independent study of typed option readout from frozen open models, with shared-prefix experiments and a WebGPU demo.
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Transforms compatible open-model logits into typed decisions without a separately trained classifier head; model compatibility is constrained.
@@ -245,6 +246,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) - Evidence-backed use cases, patterns, prompts, and starter code.
 - [awesome-jev](https://github.com/hellogumbo/awesome-jev) - Large community directory with a searchable companion site.
 - [yibie/awesome-jev](https://github.com/yibie/awesome-jev) - High-signal field guide organized by decision domain.
+- [awesome-open-system-one](https://github.com/rupeshpoojary9/awesome-open-system-one) - Open-only focus: open models and reproductions, independent benchmarks, and the calibration and constrained-decoding tooling behind typed decisions.
 - [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) - Broader TypeSafe and System One ecosystem list.
 - [OmniJev/awesome-jev](https://github.com/OmniJev/awesome-jev) - Papers, open reproductions, independent evaluations, and technical lineage.
 - [awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) - CC0, awesome-lint clean, sorted by what you would install, with a short know-before-you-build section on the limits.
