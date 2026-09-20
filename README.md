@@ -203,6 +203,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [LitJev](https://github.com/zhengxuyu/litjev) - Reproduction of Jev that turns any Qwen model into a fast decision model, serving the same `/v1/systemone` schema (Choice, Score, Noul) with no training and no generated answer text.
 - [jevmlx](https://github.com/bnsd55/jevmlx) - Jev-style parallel constrained decisions for MLX models on Apple Silicon.
 - [kev](https://github.com/jaredpalmer/kev) - Qwen2.5-0.5B adapter and decision head with training code, released weights, and parallel typed-question inference.
+- [minojev](https://github.com/zeredy879/minojev) - Head-training reproduction: a frozen Qwen3-1.7B backbone plus a ~0.8M-parameter decision head returns calibrated Choice/Boolean/Score distributions in one forward pass with zero decoded tokens; ships an 8k-request converted dataset, source-isolated OOD evaluation, and a same-backbone generation baseline (95.8% vs 80.0% on its own balanced suite, ECE 0.024).
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - Small parallel-decision model with dynamic candidates, a training pipeline, and recorded game comparisons that include shared code planning.
 - [openjev](https://github.com/zhihz/openjev) - Local bilingual probability decisions from context, questions, and candidate answers.
 - [OpenJev (DiffusionGemma)](https://github.com/razorback16/openjev) - Independent Jev-compatible server over DiffusionGemma/vLLM; the documented setup requires custom vLLM patches.
