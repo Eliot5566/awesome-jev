@@ -4,7 +4,7 @@
 
 Jev takes program state plus typed questions and returns constrained answers with probabilities. It is designed for software decisions such as classification, routing, scoring, ranking, verification, and guardrails, rather than free-form text generation.
 
-This list favors public source code, concrete Jev usage, clear limitations, and reproducible evidence. The latest review added **52 community projects and resources**, bringing that part of the list to **102**, alongside official resources, provider integrations, and related lists. See the [September 19 research notes](research/2026-09-19.md) for pinned source evidence and review boundaries. Review completed September 19, 2026 (Europe/Istanbul); upstream event dates below are UTC.
+This list favors public source code, concrete Jev usage, clear limitations, and reproducible evidence. The latest review added **20 source-reviewed integrations, projects, and studies**, bringing the community catalog to **155**, alongside official resources, provider integrations, and related lists. See the [September 20 research notes](research/2026-09-20.md) for pinned source evidence and review boundaries. Review completed September 20, 2026 (Europe/Istanbul); upstream event dates below are UTC.
 
 ## Contents
 
@@ -12,6 +12,7 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 - [Recent developments](#recent-developments)
 - [Official resources](#official-resources)
 - [Provider integrations](#provider-integrations)
+- [Framework integrations](#framework-integrations)
 - [SDKs and developer tools](#sdks-and-developer-tools)
 - [Agents, coding, and guardrails](#agents-coding-and-guardrails)
 - [Context and compaction](#context-and-compaction)
@@ -23,23 +24,31 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 - [Evaluation and calibration](#evaluation-and-calibration)
 - [Guides and cookbooks](#guides-and-cookbooks)
 - [Related lists](#related-lists)
-- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 
 ## Start here
 
-- **System One shape:** text or structured state + typed questions → constrained answers + probabilities → deterministic application code.
-- **Question primitives:** `Choice` selects an option, `Score` evaluates ordered rubric levels, and `Noul` returns a number from 0 to 1 representing the probability of "yes". Review or abstention behavior is defined in application code. See the [primitive reference](https://docs.typesafe.ai/primitives).
-- **Input boundary:** the hosted Jev model is text-only. Browser, audio, image, and robotics projects supply extracted text or structured observations, or use separate perception models. Independent multimodal reproductions are listed separately.
-- **Good fits:** semantic routing, triage, reranking, rubric scoring, moderation, verification, and low-latency decisions inside bounded workflows.
-- **Important caveat:** schema-valid output is not the same as a correct decision. Validate on your own data, calibrate thresholds, keep high-impact actions behind deterministic checks, and provide a human fallback.
+**System One shape:** text or structured state + typed questions → constrained answers + probabilities → deterministic application code.
+
+**Question primitives:** `Choice` selects an option, `Score` evaluates ordered rubric levels, and `Noul` returns a number from 0 to 1 representing the probability of "yes". Review or abstention behavior is defined in application code. See the [primitive reference](https://docs.typesafe.ai/primitives).
+
+**Input boundary:** the hosted Jev model is text-only. Browser, audio, image, and robotics projects supply extracted text or structured observations, or use separate perception models. Independent multimodal reproductions are listed separately.
+
+**Good fits:** semantic routing, triage, reranking, rubric scoring, moderation, verification, and low-latency decisions inside bounded workflows.
+
+**Important caveat:** schema-valid output is not the same as a correct decision. Validate on your own data, calibrate thresholds, keep high-impact actions behind deterministic checks, and provide a human fallback.
 
 ## Recent developments
 
-- **September 18: Python SDK 0.7.0.** [Release notes](https://github.com/typesafe-ai/typesafe-sdk-python/releases/tag/v0.7.0) document a breaking serialization change from `msgspec` to Pydantic, a new `response_model` argument, and corrected serialization of `str` subclasses.
-- **September 18: OpenRouter listing.** [Jev 1.13](https://openrouter.ai/typesafe/jev-1.13) is listed with a September 18 date. This is a provider listing date, not evidence of a separate new upstream model revision.
-- **September 16: Vercel AI Gateway integration.** The [announcement](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) introduces typed evaluation via AI SDK's experimental `evaluate` API.
-- **Current model:** [TypeSafe documents](https://docs.typesafe.ai/models) `jev-1.13.0`, with both `jev-latest` and `jev-preview` currently pointing to it. Pin the version when comparing evaluations.
-- **Ecosystem refresh:** new sections cover context pruning, browser/device control, media tools, and provider integrations. Entries newly added here include both September 18 launches and earlier release-week projects missing from the initial list.
+**September 18: Python SDK 0.7.0.** [Release notes](https://github.com/typesafe-ai/typesafe-sdk-python/releases/tag/v0.7.0) document a breaking serialization change from `msgspec` to Pydantic, a new `response_model` argument, and corrected serialization of `str` subclasses.
+
+**September 18: OpenRouter listing.** Jev 1.13 is listed with a September 18 date. This is a provider listing date, not evidence of a separate new upstream model revision.
+
+**September 16: Vercel AI Gateway integration.** The integration introduces typed evaluation via AI SDK's experimental `evaluate` API.
+
+**Current model:** TypeSafe documents `jev-1.13.0`, with both `jev-latest` and `jev-preview` currently pointing to it. Pin the version when comparing evaluations.
+
+**September 20: framework adoption.** Source-level Jev integrations are now present in LangChain, Pydantic AI, LiteLLM, Rig, Composio, Effect, BAML, Ax, and TanStack AI. Availability and release status vary, so inspect the linked repository before depending on a package.
 
 ## Official resources
 
@@ -57,8 +66,24 @@ This list favors public source code, concrete Jev usage, clear limitations, and 
 ## Provider integrations
 
 - [Cloudflare AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - Provider-maintained `typesafe/jev` integration accepting state and typed questions.
+- [Netlify AI Gateway](https://www.netlify.com/changelog/typesafe-jev-ai-gateway/) - Zero-configuration access from Netlify Functions through `@typesafe-ai/sdk`, with credentials and billing handled by Netlify.
 - [OpenRouter](https://openrouter.ai/typesafe/jev-1.13) - Provider listing for `typesafe/jev-1.13`, alongside the moving `typesafe/jev-latest` alias.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through AI SDK's experimental `evaluate` interface; its Boolean primitive corresponds to TypeSafe's Noul.
+
+## Framework integrations
+
+Upstream framework integrations with inspectable Jev implementations. Presence on a default branch does not guarantee a stable package release.
+
+- [Ax](https://github.com/ax-llm/ax) - Native TypeSafe client and Ax provider for Boolean, Choice, Score, and raw Jev questions, with answer validation and examples.
+- [BAML](https://github.com/BoundaryML/baml) - The v1 nightly integration maps typed function return values to Jev questions; it is not part of the stable release line yet.
+- [Composio](https://github.com/ComposioHQ/composio) - TypeSafe provider that shortlists tools, selects one from a bounded set, maps closed-set arguments, and exposes confidence and destructive-action gates.
+- [Effect](https://github.com/Effect-TS/effect) - `@effect/ai-typesafe` decision model mapping Effect's classify, probability, and rating operations to Jev Choice, Noul, and Score questions.
+- [LangChain](https://github.com/langchain-ai/langchain) - Python `TypeSafeClassifier` Runnable with batched typed questions plus model-routing and risky-tool middleware.
+- [LangChain.js](https://github.com/langchain-ai/langchainjs) - JavaScript/TypeScript classifier Runnable and middleware for bounded routing and tool-call checks.
+- [LiteLLM](https://github.com/BerriAI/litellm) - Jev-backed complexity routing and an optional relevance guardrail for compacting tool results before they return to an agent.
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - TypeSafe model provider that derives Jev questions from Pydantic output types and supports typed routing and fallback workflows.
+- [Rig](https://github.com/0xPlaygrounds/rig) - Rust `rig-typesafeai` crate with typed Choice, Score, and Noul queries, response validation, examples, and fixtures.
+- [TanStack AI](https://github.com/TanStack/ai) - `@tanstack/ai-typesafe` adapter exposing typed Boolean, Choice, and Score decisions through TanStack AI's `decide()` API.
 
 ## SDKs and developer tools
 
@@ -66,6 +91,7 @@ Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 
 - [advocaat](https://github.com/pithings/advocaat) - Small type-safe client for asking Jev questions about datasets.
 - [hunch](https://github.com/carldaws/hunch) - Probabilistic control flow for Ruby: `if Hunch.likely?("fraudulent", given: order)` branches on a typed Jev answer, with graded predicates from `possibly?` to `definitely?`.
+- [jegrep](https://github.com/can1357/jegrep) - Rust semantic grep that scores live repository files and ranges with Jev probabilities, without an embedding index or background daemon.
 - [jev](https://github.com/dannote/jev) - Elixir/OTP client designed around GenServer replies and pattern matching.
 - [jev-axi](https://github.com/shiftynick/jev-axi) - CLI for picking, rating, checking, ranking, triaging, and guarding from the shell.
 - [jev-dsl](https://github.com/inanna-malick/jev-dsl) - Early-alpha Haskell DSL that encodes typed question packets and decodes answers; HTTP transport is left to the caller.
@@ -147,9 +173,11 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB extension that exposes Jev judgments as SQL values with return types derived from the declared criteria.
 - [HA-Jev](https://github.com/AboveColin/HA-Jev) - Home Assistant integration exposing typed answers as sensors, automation actions, and an Assist conversation agent.
 - [hono-jev-router](https://github.com/yusukebe/hono-jev-router) - Routes Hono HTTP requests by meaning.
+- [Inbox Zero](https://github.com/elie222/inbox-zero) - Email assistant where Jev is an optional classifier backend returning bounded categories and yes/no probabilities.
 - [jev-align (Sutro)](https://github.com/sutro-sh/jev-align) - Active-learning CLI where Jev evaluates rows and surfaces uncertain or audit samples for human labeling, then GEPA proposes revised decision definitions that the user can accept or reject.
 - [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Streaming filter and scorer for Parquet and JSONL datasets.
 - [jev-logtriage](https://github.com/jyatesdotdev/jev-logtriage) - Jev scores collapsed log batches for noise, severity, and whether an operator should act. Code maps the answers to suppress, watch, review, notify, or page. Nothing is executed.
+- [JevMail](https://github.com/fazlerocks/jevmail) - Read-only Gmail triage that stores messages locally and asks Jev for bounded category, urgency, and human-sender probabilities.
 - [jev-reranker](https://github.com/hotchpotch/jev-reranker) - Retrieval and RAG: uses Jev Noul judgments to assess retrieved documents for relevance and usefulness as answer evidence, then sorts results and optionally filters them using a configurable threshold.
 - [jev-reviewer](https://github.com/choxos/jev-reviewer) - Research-document extraction aid where Jev selects and verifies source lines for verbatim quotes; findings require human review and are not clinical decisions.
 - [jev-search](https://github.com/superagents-lab/jev-search) - Uses Jev to select search sources and rank Search1API results, returning source links and snippets.
@@ -158,7 +186,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive choice over taxonomies larger than Jev's direct option limit.
 - [Jev Web Analyzer](https://github.com/replynodes/jev-web-analyzer) - Fetches a public SaaS page as Markdown, then asks Jev ten bounded questions about likely first-visit comprehension; URL validation, caching, sanitization, and presentation remain deterministic. [Demo](https://replynodes.com/jev-web-analyzer/).
 - [jevlogs](https://github.com/reachjalil/jevlogs) - OpenTelemetry log triage before more expensive analysis.
-- [jevql](https://github.com/kylemclaren/jevql) - psql-shaped client and Go/TypeScript/Python SDKs for vanilla Postgres where Jev makes Noul, Choice, and Score judgements about individual table rows after the plain SQL has run on the server, and the client applies the resulting filter, sort, or group.
+- [jevql](https://github.com/kylemclaren/jevql) - Psql-shaped client and Go/TypeScript/Python SDKs for vanilla PostgreSQL where Jev makes Noul, Choice, and Score judgements about individual table rows after the plain SQL has run on the server, and the client applies the resulting filter, sort, or group.
 - [jevsql](https://github.com/EugeneBoondock/jevsql) - SQL-like filtering, ranking, classification, and scoring with natural-language predicates.
 - [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex reranker and selector using Jev Score and Choice answers, with configurable confidence handling.
 - [n8n-nodes-typesafe-jev](https://github.com/n3ndor/n8n-nodes-typesafe-jev) - Community n8n node for asking multiple typed questions over workflow state.
@@ -167,9 +195,11 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) - Classifies text-bearing PDF pages into IRS form and page-kind candidates with a confidence gate; document triage, not tax advice, and scanned pages need OCR.
 - [tiershift](https://github.com/iamvatsalpatel/tiershift) - Policy-bounded model routing for TypeScript and Python.
 - [typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow) - LangGraph email-intent workflow using a typed Jev choice.
+- [World Monitor](https://github.com/koala73/worldmonitor) - Geopolitical dashboard that batches Jev 1.13.0 headline-severity and topic classifications, validates the answers, and falls back when classification fails.
 
 ## Games, robotics, and interactive demos
 
+- [Embodied Jev](https://github.com/FBddcz/embodied-jev) - MuJoCo Franka Panda workbench where Jev can choose from bounded simulator actions over structured observations; deterministic code owns physics and safety checks, and the published Jev comparison is still pending.
 - [heist-one](https://github.com/AbdelStark/heist-one) - Browser stealth game where Jev judges guards while deterministic code owns the world.
 - [jev-canvas](https://github.com/gaborishka/jev-canvas) - Voice and finger-pointing control of a tldraw canvas: Jev picks the action, target shape and place from each partial transcript plus the fingertip position; deterministic code applies thresholds and executes the edit.
 - [jev-drone](https://github.com/RomanSlack/jev-drone) - Simulated MuJoCo quadrotor with Jev making slower tactical judgments from processed camera observations; deterministic code controls flight.
@@ -186,6 +216,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 
 ## Media and creative tools
 
+- [Jev Paint](https://github.com/achimala/jev-paint) - Local browser app that turns batched per-pixel Jev distributions into paintings; prompts describe pixels and regions rather than sending raw images.
 - [jev-skip](https://github.com/valentynkit/jev-skip) - Browser extension that reads the YouTube caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, with no crowd database; reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 a video.
 - [jevmeter](https://github.com/ChetasLua/jevmeter) - Scores every sentence in a video and renders the result as an overlay.
 - [Jevthoven](https://github.com/cocktailpeanut/jevthoven) - Symbolic-music studio where Jev chooses plans, instruments, and bar patterns, and code renders editable music and MIDI.
@@ -199,12 +230,14 @@ These projects can operate real browsers or devices when enabled. Published demo
 These projects explore Jev-like interfaces or open implementations. They are independent efforts, not official TypeSafe releases or verified reproductions of its proprietary architecture, RLCD training, or calibration.
 
 - [Jev Visual](https://github.com/hr98w/jev-visual) - Educational MLX/Qwen vision-language experiment sharing image context across candidate-scoring questions; its probabilities are not calibrated correctness estimates.
+- [JevForge](https://github.com/zwliJay/jev-forge) - Auditable Qwen3.5-0.8B pipeline covering data synthesis, training, calibration, fixed evaluation, Jev-compatible serving, and public model and dataset artifacts; its metrics are project-local.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) - Trainable encoder and option-attention head for variable candidate sets, with separate visual game experiments.
 - [LitJev](https://github.com/zhengxuyu/litjev) - Reproduction of Jev that turns any Qwen model into a fast decision model, serving the same `/v1/systemone` schema (Choice, Score, Noul) with no training and no generated answer text.
 - [jevmlx](https://github.com/bnsd55/jevmlx) - Jev-style parallel constrained decisions for MLX models on Apple Silicon.
 - [kev](https://github.com/jaredpalmer/kev) - Qwen2.5-0.5B adapter and decision head with training code, released weights, and parallel typed-question inference.
 - [minojev](https://github.com/zeredy879/minojev) - Head-training reproduction: a frozen Qwen3-1.7B backbone plus a ~0.8M-parameter decision head returns calibrated Choice/Boolean/Score distributions in one forward pass with zero decoded tokens; ships an 8k-request converted dataset, source-isolated OOD evaluation, and a same-backbone generation baseline (95.8% vs 80.0% on its own balanced suite, ECE 0.024).
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - Small parallel-decision model with dynamic candidates, a training pipeline, and recorded game comparisons that include shared code planning.
+- [open-jev (MLX)](https://github.com/daseinlabs/open-jev) - Gemma 3 option scorer for Apple MLX that shares one prefill across candidate continuations and exposes a System One-compatible endpoint; its docs show zero-shot overconfidence and an optional trained head.
 - [openjev](https://github.com/zhihz/openjev) - Local bilingual probability decisions from context, questions, and candidate answers.
 - [OpenJev (DiffusionGemma)](https://github.com/razorback16/openjev) - Independent Jev-compatible server over DiffusionGemma/vLLM; the documented setup requires custom vLLM patches.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) - Jev-compatible API endpoint backed by open models and prefill-only inference.
@@ -215,7 +248,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [reflex](https://github.com/kshetrajna12/reflex) - Open-model decision engine with shared-state inference, isolated question branches, and a WebGPU demo; browser and Python configurations differ.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Formerly OpenJev: an independent study of typed option readout from frozen open models, with shared-prefix experiments and a WebGPU demo.
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Transforms compatible open-model logits into typed decisions without a separately trained classifier head; model compatibility is constrained.
-- [Verdict-open-jev](https://github.com/Heman10x-NGU/Verdict-open-jev) - ModernBERT decision engine with calibrated uncertainty and a WebGPU playground.
+- [openJev Verdict 2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - ModernBERT-based decision model with separate distribution and confidence heads, saved evaluation artifacts, public weights, and an in-browser WebGPU demo; reported results are project-local.
 
 ## Evaluation and calibration
 
@@ -229,9 +262,11 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [jev-eval-agent](https://github.com/vinilana/jev-eval-agent) - Compares LLM tool selection with Jev routing in a personal-assistant harness containing 100 mocked tools.
 - [jev-korean-benchmark](https://github.com/mahlernim/jev-korean-benchmark) - Small Korean/English sample study with recorded responses, including medical-text questions; not a clinical validation.
 - [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) - Measures whether ORDER BY over a Jev probability is defensible (inversion rate, Score ordinality against a human grade, calibration, wording invariants, sort-key ties) under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows a DuckDB extension's default 40-row batching fails the ranking gate that one row per request passes.
+- [jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench) - Fourteen-dataset reranking study with saved raw responses, paired bootstrap intervals, order-sensitivity checks, and no-relevant-document tests; comparisons remain study-specific.
 - [jev-scout golden-set study](https://github.com/kierandotai/jev-scout/blob/main/docs/accuracy/2026-09-19-jev-golden-set-study.md) - Hand-labeled 25-item search-triage study with pinned rubric versions and a drift baseline; reports 88% relevance and 96% credibility with all four misses decomposed.
 - [jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval) - Chinese/English retrieval evaluation comparing Jev reranking with lexical, embedding, and fusion baselines, including judge-circularity analysis.
 - [jevcal](https://github.com/abhixhek/jevcal) - Fits and drift-checks confidence thresholds against labeled data.
+- [Jev Capability Atlas](https://github.com/Zaious/jev-capability-atlas) - Bilingual evidence map with recorded API runs and reusable suites that separates its own tests, third-party benchmarks, and editorial synthesis.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - LLM gateway that mimics the System One output shape for comparison work.
 
 ## Guides and cookbooks
@@ -240,9 +275,11 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [Classifying RAG passages](https://docs.typesafe.ai/cookbooks/classifying_rag_passages) - Official example of judging retrieved passages before passing them to an answering model.
 - [Date extraction](https://docs.typesafe.ai/cookbooks/date_extraction_cookbook) - Official pattern separating typed extraction from date validation and arithmetic in code.
 - [Double-checking citations](https://docs.typesafe.ai/cookbooks/citation_check) - Official example of checking whether source context supports a claim.
+- [Gating agent tool calls](https://openrouter.ai/docs/cookbook/building-agents/gate-tool-calls-with-jev) - OpenRouter recipe combining deterministic checks with Jev Noul probabilities and fixed approve, block, or human-review thresholds.
 - [Jev Cookbook](https://github.com/nexibeo/jev-cookbook) - Community cookbook of 15 runnable recipes where Jev picks categories, tags, dates, duplicates and next browser actions while deterministic code owns thresholds, review bands and every action.
 - [Parallel questions](https://docs.typesafe.ai/cookbooks/parallel_questions) - Official worked example of evaluating many questions over shared state in one request.
 - [Skill suggestion](https://docs.typesafe.ai/cookbooks/skill_suggestion) - Official two-stage workflow that selects a skill and can reject the shortlist.
+- [Verified cascade](https://openrouter.ai/docs/cookbook/evaluate-and-optimize/jev-verified-cascade) - OpenRouter example that checks a cheaper draft against grounding constraints with Jev before accepting it or escalating to a stronger model.
 
 ## Related lists
 
@@ -260,10 +297,8 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 
 Built something with Jev? Read [CONTRIBUTING.md](CONTRIBUTING.md) and open a pull request. Small projects are welcome when the source clearly shows a concrete Jev decision loop.
 
-## License
-
-[CC0 1.0 Universal](LICENSE). Linked projects keep their own licenses.
+**License:** [CC0 1.0 Universal](LICENSE). Linked projects keep their own licenses.
 
 ## Acknowledgements
 
-Discovery used public GitHub search, TypeSafe and provider documentation, and the related community lists above. Descriptions added in this refresh were checked against pinned project READMEs and relevant source files; the [research notes](research/2026-09-19.md) record those sources. Inclusion is not an endorsement by TypeSafe AI or a claim of production readiness.
+Discovery used public GitHub search, TypeSafe and provider documentation, and the related community lists above. Descriptions added in this refresh were checked against pinned project READMEs and relevant source files; the latest research notes record those sources, and the [September 19 notes](research/2026-09-19.md) preserve the preceding review. Inclusion is not an endorsement by TypeSafe AI or a claim of production readiness.
