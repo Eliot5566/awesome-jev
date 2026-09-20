@@ -103,6 +103,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [jev-review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
 - [jev-review MCP plugin](https://github.com/NiazMorshed2007/jev-review) - Local-first continuous software-quality review for coding agents.
 - [jev-router](https://github.com/gargpratyush/jev-router) - Chooses a model for each fresh Claude Code or Codex turn while wrapping the existing CLI.
+- [JevRouter](https://github.com/BillionsBobby/JevRouter) - Routes agent requests across models, subagents, skills, MCP tools, CLIs, and plugins with Jev Choice decisions; the host filters by availability, permissions, risk, and confirmation before anything executes.
 - [jev-scout](https://github.com/kierandotai/jev-scout) - MCP server that scores an agent's every search query, result, and fetched page for relevance and credibility, with session budgets, SSRF-guarded fetching, and a live decision dashboard.
 - [jev-use](https://github.com/shitianfang/jev-use) - Claude Code / Codex / pi plugin where Jev answers batched noul, choice, and score questions and risk-checks tool calls, while a typed escalation contract hands writing and unsure steps back to the LLM.
 - [jevwire](https://github.com/Brainwires/jevwire) - MCP tools, an embeddable decision library, and advisory or restrictive Claude Code hooks; judgments do not grant native permissions.
@@ -155,6 +156,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jev-trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid trading desk where Jev answers Choice questions for long/short, open/close/hold, and leverage; application code quotes or sends no order. Defaults to a dry run; a live key can place real orders.
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) - Kuru/Monad trading experiment with optional Jev buy/sell decisions; defaults to a mock model and dry-runs without a private key, but configured execution can place real orders.
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive choice over taxonomies larger than Jev's direct option limit.
+- [Jev Web Analyzer](https://github.com/replynodes/jev-web-analyzer) - Fetches a public SaaS page as Markdown, then asks Jev ten bounded questions about likely first-visit comprehension; URL validation, caching, sanitization, and presentation remain deterministic. [Demo](https://replynodes.com/jev-web-analyzer/).
 - [jevlogs](https://github.com/reachjalil/jevlogs) - OpenTelemetry log triage before more expensive analysis.
 - [jevql](https://github.com/kylemclaren/jevql) - psql-shaped client and Go/TypeScript/Python SDKs for vanilla Postgres where Jev makes Noul, Choice, and Score judgements about individual table rows after the plain SQL has run on the server, and the client applies the resulting filter, sort, or group.
 - [jevsql](https://github.com/EugeneBoondock/jevsql) - SQL-like filtering, ranking, classification, and scoring with natural-language predicates.
