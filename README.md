@@ -118,6 +118,8 @@ Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 Source-reviewed experiments and integrations. A model judgment does not establish safety or replace the host application's permission checks.
 
 - [agent-router](https://github.com/nidhi-singh02/agent-router) - Pre-release Herdr integration that filters eligible coding models by quota and policy before Jev ranks them.
+- [Augustus](https://github.com/24601/Augustus) - Design-judgment skill for the decision-model class; TypeSafe Jev (System One) is the dominant exemplar for composition, question design, and validation gates.
+
 - [blink](https://github.com/ellipsis-dev/blink) - Navigates file and directory names with Jev-guided walkers to find codebase paths for a natural-language query.
 - [Canny](https://github.com/qkal/Canny) - Evidence ledger that challenges unsupported "done" claims from coding agents.
 - [commit-miner](https://github.com/devanshbatham/commit-miner) - Classifies Git diffs and commit messages into change types and candidate security-fix/CWE labels for inspection.
