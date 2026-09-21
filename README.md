@@ -177,6 +177,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 
 ## Routing, data, and workflows
 
+- [algovault-integrations: typesafe-jev](https://github.com/AlgoVaultLabs/algovault-integrations/tree/main/examples/typesafe-jev) - Jev decides whether to act on a composite AlgoVault verdict (direction, confidence, regime) for a crypto perp market now, and how well the regime fits a directional entry; code computes position conflict, applies every threshold, and logs act, hold, or escalate. Read-only: it never places orders, and runs as a dry run with no key required.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB extension that exposes Jev judgments as SQL values with return types derived from the declared criteria.
 - [HA-Jev](https://github.com/AboveColin/HA-Jev) - Home Assistant integration exposing typed answers as sensors, automation actions, and an Assist conversation agent.
 - [hono-jev-router](https://github.com/yusukebe/hono-jev-router) - Routes Hono HTTP requests by meaning.
