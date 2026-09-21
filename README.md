@@ -193,6 +193,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [Jev Reranker (Rust CLI)](https://github.com/shinpr/jev-reranker) - Rust JSON-in/JSON-out CLI that asks Jev about relevance, usable evidence, or which source text to retain, then applies the resulting order and thresholds in code.
 - [jev-reviewer](https://github.com/choxos/jev-reviewer) - Research-document extraction aid where Jev selects and verifies source lines for verbatim quotes; findings require human review and are not clinical decisions.
 - [jev-search](https://github.com/superagents-lab/jev-search) - Uses Jev to select search sources and rank Search1API results, returning source links and snippets.
+- [jev-sheets](https://github.com/Cab14bacc/jev-sheets) - Google Sheets custom functions (`JEV_IF`, `JEV_PROB`, `JEV_CHOICE`, `JEV_SCORE`) where Jev answers a Noul, Choice, or Score question per cell; the sheet formula applies the threshold or minimum confidence and returns `UNSURE` below it.
 - [jev-trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid trading desk where Jev answers Choice questions for long/short, open/close/hold, and leverage; application code quotes or sends no order. Defaults to a dry run; a live key can place real orders.
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) - Kuru/Monad trading experiment with optional Jev buy/sell decisions; defaults to a mock model and dry-runs without a private key, but configured execution can place real orders.
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive choice over taxonomies larger than Jev's direct option limit.
@@ -201,7 +202,6 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jevlogs](https://github.com/reachjalil/jevlogs) - OpenTelemetry log triage before more expensive analysis.
 - [jevql](https://github.com/kylemclaren/jevql) - Psql-shaped client and Go/TypeScript/Python SDKs for vanilla PostgreSQL where Jev makes Noul, Choice, and Score judgements about individual table rows after the plain SQL has run on the server, and the client applies the resulting filter, sort, or group.
 - [jevsql](https://github.com/EugeneBoondock/jevsql) - SQL-like filtering, ranking, classification, and scoring with natural-language predicates.
-- [jev-sheets](https://github.com/Cab14bacc/jev-sheets) - Jev for Google Sheets! Defines functions: `JEV_IF`, `JEV_PROB`, `JEV_CHOICE`, `JEV_SCORE`. 
 - [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex reranker and selector using Jev Score and Choice answers, with configurable confidence handling.
 - [n8n-nodes-typesafe-jev](https://github.com/n3ndor/n8n-nodes-typesafe-jev) - Community n8n node for asking multiple typed questions over workflow state.
 - [pg-jev](https://github.com/realZachi/pg-jev) - PostgreSQL extension for semantic questions over table rows.
