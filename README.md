@@ -107,6 +107,7 @@ Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 - [ruby_decision_model](https://github.com/obie/ruby_decision_model) - Ruby client with standard-library transport for TypeSafe and OpenRouter decision endpoints.
 - [semdecide](https://github.com/sharziki/semdecide) - Typed semantic decisions for Unix pipelines and CI.
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - Idiomatic Go SDK for the TypeSafe API.
+- [typesafe-java](https://github.com/dfa1/typesafe-java) - JDK 21+ client, modular by design, with a dedicated testkit module for unit testing callers.
 - [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) - MCP connector that gives agents access to Jev decisions.
 - [typesafe-sdk-java](https://github.com/Premo-Cloud/typesafe-sdk-java) - Community Java 17 client for Choice, Score, and Noul, with an optional Spring Boot starter.
 - [zod-jev](https://github.com/jomatsu/zod-jev) - Pairs local Zod shape validation with Jev semantic validation.
