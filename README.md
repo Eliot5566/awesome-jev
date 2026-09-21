@@ -269,6 +269,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 Results belong to each project's dataset, prompts, model version, and measurement setup. Inclusion means the evidence is inspectable, not that benchmarks were independently rerun.
 
 - [Janus](https://github.com/FirasSX914/Janus) - Measures when to use Jev versus other models and routes accordingly.
+- [Jev Calibration Study (Nautilus Assay)](https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_CALIBRATION.md) - Independent, reproducible calibration evaluation of hosted Jev (240 seeded questions, all raw artifacts published): accuracy 92.2%, Brier 0.048, ECE 0.041 overall.
 - [jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study) - Independent synthetic-task study of Jev 1.13.0 framing sensitivity and failures, with raw responses and offline report checks.
 - [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) - Reproducible evaluation for calibration, selective risk, and latency.
 - [jev-decision-benchmarks](https://github.com/baibizhe/jev-decision-benchmarks) - Independent evaluation of Jev on MetaTool, When2Call, and BFCL V4 agent decision tasks, focusing on tool selection, abstention, and tool-use decisions. Includes comparison tables against Claude, Qwen, and GPT models.
