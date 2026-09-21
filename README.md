@@ -93,6 +93,7 @@ Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 - [hunch](https://github.com/carldaws/hunch) - Probabilistic control flow for Ruby: `if Hunch.likely?("fraudulent", given: order)` branches on a typed Jev answer, with graded predicates from `possibly?` to `definitely?`.
 - [jegrep](https://github.com/can1357/jegrep) - Rust semantic grep that scores live repository files and ranges with Jev probabilities, without an embedding index or background daemon.
 - [jev](https://github.com/dannote/jev) - Elixir/OTP client designed around GenServer replies and pattern matching.
+- [jev-acp](https://github.com/formulahendry/jev-acp) - Standalone ACP agent exposing Jev Choice, Score, and Noul decisions through guided input and reusable templates, with typed results and probabilities.
 - [jev-axi](https://github.com/shiftynick/jev-axi) - CLI for picking, rating, checking, ranking, triaging, and guarding from the shell.
 - [jev-dsl](https://github.com/inanna-malick/jev-dsl) - Early-alpha Haskell DSL that encodes typed question packets and decodes answers; HTTP transport is left to the caller.
 - [jev-mcp](https://github.com/blakestone-x/jev-mcp) - MCP server exposing classify, score, check, match, and screen tools.
