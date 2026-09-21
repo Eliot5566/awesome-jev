@@ -105,6 +105,7 @@ Community-maintained clients and tools; official TypeSafe SDKs are listed above.
 - [jevr](https://github.com/simxnherrera/jevr) - Native R client for typed questions and provider-independent answers through TypeSafe or OpenRouter.
 - [jgrep (kyu1204)](https://github.com/kyu1204/jgrep) - Semantic grep for code, git diffs and CSV rows: one Noul per 5-60 line chunk, 16 chunks per Jev request, grep-style file:line output and exit codes for CI lint rules written in English; ships an interactive init and a Claude Code / Codex skill.
 - [laravel-typesafe-jev](https://github.com/Butochnikov/laravel-typesafe-jev) - Laravel integration with typed responses, async requests, and testing fakes.
+- [pytest-jev](https://github.com/allebee/pytest-jev) - pytest plugin where Jev decides whether each plain-English claim about a test's text holds, and the test passes only when every claim clears 0.8 (or stays at or below 0.2 for claims that must not hold), with Choice and Score answers compared by probability.
 - [ruby_decision_model](https://github.com/obie/ruby_decision_model) - Ruby client with standard-library transport for TypeSafe and OpenRouter decision endpoints.
 - [semdecide](https://github.com/sharziki/semdecide) - Typed semantic decisions for Unix pipelines and CI.
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - Idiomatic Go SDK for the TypeSafe API.
