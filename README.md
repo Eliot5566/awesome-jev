@@ -231,6 +231,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jev-skip](https://github.com/valentynkit/jev-skip) - Browser extension that reads the YouTube caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, with no crowd database; reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 a video.
 - [jevmeter](https://github.com/ChetasLua/jevmeter) - Scores every sentence in a video and renders the result as an overlay.
 - [Jevthoven](https://github.com/cocktailpeanut/jevthoven) - Symbolic-music studio where Jev chooses plans, instruments, and bar patterns, and code renders editable music and MIDI.
+- [PlotVeil](https://github.com/Dearest/plotveil) - Chrome extension where one Jev Noul question per YouTube comment answers whether it reveals a concrete plot event of the video being watched or of another title the user protects; the extension owns the 0.85 / 0.7 / 0.5 threshold and keeps the comment covered when the check fails.
 - [SlidePilot](https://github.com/harshil1712/slidepilot) - Experimental Slidev controller that judges speech transcripts for slide completion, with deterministic checks and manual navigation.
 - [Sponsor Skip](https://github.com/trungdq88/youtube-sponsor-detection) - Finds sponsor reads in YouTube transcripts or transcribed audio while code owns timestamps and playback skipping.
 - [unclutter](https://github.com/kitze/unclutter) - Browser extension that uses Jev to identify page clutter and saves reusable, reversible hiding rules.
