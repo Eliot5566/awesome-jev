@@ -201,6 +201,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [jevlogs](https://github.com/reachjalil/jevlogs) - OpenTelemetry log triage before more expensive analysis.
 - [jevql](https://github.com/kylemclaren/jevql) - Psql-shaped client and Go/TypeScript/Python SDKs for vanilla PostgreSQL where Jev makes Noul, Choice, and Score judgements about individual table rows after the plain SQL has run on the server, and the client applies the resulting filter, sort, or group.
 - [jevsql](https://github.com/EugeneBoondock/jevsql) - SQL-like filtering, ranking, classification, and scoring with natural-language predicates.
+- [jev-sheets](https://github.com/Cab14bacc/jev-sheets) - Jev for Google Sheets! Defines functions: `JEV_IF`, `JEV_PROB`, `JEV_CHOICE`, `JEV_SCORE`. 
 - [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex reranker and selector using Jev Score and Choice answers, with configurable confidence handling.
 - [n8n-nodes-typesafe-jev](https://github.com/n3ndor/n8n-nodes-typesafe-jev) - Community n8n node for asking multiple typed questions over workflow state.
 - [pg-jev](https://github.com/realZachi/pg-jev) - PostgreSQL extension for semantic questions over table rows.
