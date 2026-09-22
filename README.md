@@ -276,6 +276,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [ruling](https://github.com/bradAGI/ruling) - Reproduction that serves Jev's `/v1/systemone` schema from a frozen MLX model or OpenAI-compatible endpoint by reading option probabilities from the logits, with option-order averaging, temperature calibration, and a harness that replays Jev's published answers on public judgments.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Formerly OpenJev: an independent study of typed option readout from frozen open models, with shared-prefix experiments and a WebGPU demo.
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Transforms compatible open-model logits into typed decisions without a separately trained classifier head; model compatibility is constrained.
+- [When a Judgment Layer’s Self-Reported Fields Lie](https://doi.org/10.5281/zenodo.22901853) - Independent measurement of Jev’s typed decisions as one of three judgment layers compared on a common item set, with a reproduction artifact and a 59-check verification suite; reports Jev’s verdict vocabulary collapsing to three reachable values and a truncation flag that does not track the clamp actually in force.
 
 ## Evaluation and calibration
 
