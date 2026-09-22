@@ -327,6 +327,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) - CC0, awesome-lint clean, sorted by what you would install, with a short know-before-you-build section on the limits.
 - [MrJev/awesome-jev](https://github.com/MrJev/awesome-jev) - Selective list with a 10-star bar and hands-on reviews of each tool at mrjev.com.
 - [Made with Jev](https://madewithjev.com) - Use-case directory of Jev builds, guides, and posts, with the cost and speed each author reported, plus free Jev-powered tools.
+- [jev-in-the-wild](https://github.com/Jessie-QingYu/jev-in-the-wild) - Index covering Reddit, Hacker News and YouTube alongside GitHub, with a dedicated section for limits and failed results. Data is JSON with a schema; the README is generated from it.
 
 ## Contributing
 
