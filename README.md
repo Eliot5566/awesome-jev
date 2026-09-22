@@ -216,6 +216,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [tiershift](https://github.com/iamvatsalpatel/tiershift) - Policy-bounded model routing for TypeScript and Python.
 - [typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow) - LangGraph email-intent workflow using a typed Jev choice.
 - [World Monitor](https://github.com/koala73/worldmonitor) - Geopolitical dashboard that batches Jev 1.13.0 headline-severity and topic classifications, validates the answers, and falls back when classification fails.
+- [jev-guard](https://github.com/klauswg/jev-guard) - Real-time deposit/withdrawal risk-triage gateway for crypto exchanges: Jev answers four typed questions per transfer while a hard-rule layer vetoes and a direction-aware Java gate composes the final action; ships a 100-sample, three-column calibration (rules-only vs Jev vs combined) with stated limitations.
 
 ## Games, robotics, and interactive demos
 
