@@ -266,6 +266,7 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [open-jev (MLX)](https://github.com/daseinlabs/open-jev) - Gemma 3 option scorer for Apple MLX that shares one prefill across candidate continuations and exposes a System One-compatible endpoint; its docs show zero-shot overconfidence and an optional trained head.
 - [openjev](https://github.com/zhihz/openjev) - Local bilingual probability decisions from context, questions, and candidate answers.
 - [OpenJev (DiffusionGemma)](https://github.com/razorback16/openjev) - Independent Jev-compatible server over DiffusionGemma/vLLM; the documented setup requires custom vLLM patches.
+- [openJev Verdict 2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - ModernBERT-based decision model with separate distribution and confidence heads, saved evaluation artifacts, public weights, and an in-browser WebGPU demo; reported results are project-local.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) - Jev-compatible API endpoint backed by open models and prefill-only inference.
 - [openvons](https://github.com/genai-craft/openvons) - Open decision layer for finite options across text, images, and Japanese voice commands.
 - [parallelConstraintDecoding](https://github.com/stephanj/parallelConstraintDecoding) - Java and llama.cpp experiments in parallel constrained decoding.
@@ -275,7 +276,6 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [ruling](https://github.com/bradAGI/ruling) - Reproduction that serves Jev's `/v1/systemone` schema from a frozen MLX model or OpenAI-compatible endpoint by reading option probabilities from the logits, with option-order averaging, temperature calibration, and a harness that replays Jev's published answers on public judgments.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Formerly OpenJev: an independent study of typed option readout from frozen open models, with shared-prefix experiments and a WebGPU demo.
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Transforms compatible open-model logits into typed decisions without a separately trained classifier head; model compatibility is constrained.
-- [openJev Verdict 2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - ModernBERT-based decision model with separate distribution and confidence heads, saved evaluation artifacts, public weights, and an in-browser WebGPU demo; reported results are project-local.
 
 ## Evaluation and calibration
 
