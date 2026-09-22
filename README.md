@@ -134,7 +134,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Per-turn Codex model, reasoning, and speed-mode routing.
 - [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook where one Jev call judges whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it detects a credential.
 - [jev-engineering](https://github.com/eugeniughelbur/jev-engineering) - Decision layer for coding agents: deterministic hard rules, then a Jev call, exposed as a Claude Code PreToolUse hook, an MCP server, a loopback service and a shared team policy. Ships a 300-call injection kit and its results: blunt injections moved 0 of 30 dangerous commands but caused 10% false denials on safe ones, authority framing moved 3 of 30.
-- [jev-guard](https://github.com/leepokai/jev-guard) - Cross-agent tool-call risk scoring with allow, ask, and deny outcomes.
+- [jev-guard (leepokai)](https://github.com/leepokai/jev-guard) - Cross-agent tool-call risk scoring with allow, ask, and deny outcomes.
 - [jev-pref](https://github.com/doeixd/jev-pref) - Linter that has Jev check code changes against project preferences from `jev-pref.json` and feeds findings back to coding agents.
 - [jev-review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
 - [jev-review MCP plugin](https://github.com/NiazMorshed2007/jev-review) - Local-first continuous software-quality review for coding agents.
@@ -194,6 +194,7 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [Inbox Zero](https://github.com/elie222/inbox-zero) - Email assistant where Jev is an optional classifier backend returning bounded categories and yes/no probabilities.
 - [jev-align (Sutro)](https://github.com/sutro-sh/jev-align) - Active-learning CLI where Jev evaluates rows and surfaces uncertain or audit samples for human labeling, then GEPA proposes revised decision definitions that the user can accept or reject.
 - [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Streaming filter and scorer for Parquet and JSONL datasets.
+- [jev-guard (klauswg)](https://github.com/klauswg/jev-guard) - Real-time deposit/withdrawal risk-triage gateway for crypto exchanges: Jev answers four typed questions per transfer while a hard-rule layer vetoes and a direction-aware Java gate composes the final action; ships a 100-sample, three-column calibration (rules-only vs Jev vs combined) with stated limitations.
 - [jev-logtriage](https://github.com/jyatesdotdev/jev-logtriage) - Jev scores collapsed log batches for noise, severity, and whether an operator should act. Code maps the answers to suppress, watch, review, notify, or page. Nothing is executed.
 - [JevMail](https://github.com/fazlerocks/jevmail) - Read-only Gmail triage that stores messages locally and asks Jev for bounded category, urgency, and human-sender probabilities.
 - [jev-reranker](https://github.com/hotchpotch/jev-reranker) - Retrieval and RAG: uses Jev Noul judgments to assess retrieved documents for relevance and usefulness as answer evidence, then sorts results and optionally filters them using a configurable threshold.
@@ -217,7 +218,6 @@ These projects can operate real browsers or devices when enabled. Published demo
 - [tiershift](https://github.com/iamvatsalpatel/tiershift) - Policy-bounded model routing for TypeScript and Python.
 - [typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow) - LangGraph email-intent workflow using a typed Jev choice.
 - [World Monitor](https://github.com/koala73/worldmonitor) - Geopolitical dashboard that batches Jev 1.13.0 headline-severity and topic classifications, validates the answers, and falls back when classification fails.
-- [jev-guard](https://github.com/klauswg/jev-guard) - Real-time deposit/withdrawal risk-triage gateway for crypto exchanges: Jev answers four typed questions per transfer while a hard-rule layer vetoes and a direction-aware Java gate composes the final action; ships a 100-sample, three-column calibration (rules-only vs Jev vs combined) with stated limitations.
 
 ## Games, robotics, and interactive demos
 
