@@ -301,6 +301,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [Date extraction](https://docs.typesafe.ai/cookbooks/date_extraction_cookbook) - Official pattern separating typed extraction from date validation and arithmetic in code.
 - [Double-checking citations](https://docs.typesafe.ai/cookbooks/citation_check) - Official example of checking whether source context supports a claim.
 - [Gating agent tool calls](https://openrouter.ai/docs/cookbook/building-agents/gate-tool-calls-with-jev) - OpenRouter recipe combining deterministic checks with Jev Noul probabilities and fixed approve, block, or human-review thresholds.
+- [Jev by Example](https://github.com/ReallyArtificial/jev-by-example) - Ten runnable JavaScript lessons where Jev judges memory relationships, task evidence, and handoff constraints while application code enforces explicit policies; offline fixtures are the default and live calls are opt-in.
 - [Jev Cookbook](https://github.com/nexibeo/jev-cookbook) - Community cookbook of 15 runnable recipes where Jev picks categories, tags, dates, duplicates and next browser actions while deterministic code owns thresholds, review bands and every action.
 - [Parallel questions](https://docs.typesafe.ai/cookbooks/parallel_questions) - Official worked example of evaluating many questions over shared state in one request.
 - [Skill suggestion](https://docs.typesafe.ai/cookbooks/skill_suggestion) - Official two-stage workflow that selects a skill and can reject the shortlist.
@@ -327,3 +328,4 @@ Built something with Jev? Read [CONTRIBUTING.md](CONTRIBUTING.md) and open a pul
 ## Acknowledgements
 
 Discovery used public GitHub search, TypeSafe and provider documentation, and the related community lists above. Descriptions added in this refresh were checked against pinned project READMEs and relevant source files; the latest research notes record those sources, and the [September 19 notes](research/2026-09-19.md) preserve the preceding review. Inclusion is not an endorsement by TypeSafe AI or a claim of production readiness.
+
