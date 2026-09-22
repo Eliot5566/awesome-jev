@@ -149,6 +149,7 @@ Source-reviewed experiments and integrations. A model judgment does not establis
 - [skillranker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks agent skills against live session context and can abstain.
 - [slop-grader](https://github.com/lukstei/slop-grader) - Rule-based text grader that uses Jev scores and line-by-line flags to audit documents against custom rulesets and guide an AI agent to auto-fix violations.
 - [supercov](https://github.com/supercorp-ai/supercov) - Scores source files so coding agents can prioritize code-quality work.
+- [Switchboard](https://github.com/ruban-24/switchboard) - Claude Code and Codex wrapper that uses Jev to assess a new conversation's task, applies deterministic confidence rules to choose a model and reasoning effort, and pins the pair through follow-ups, tool calls, and resume to avoid unnecessary prompt-cache disruption.
 - [taste-lint](https://github.com/mblode/taste-lint) - CLI that uses Jev probabilities on semantic taste checks to catch AI slop in UI, copy, and agent instructions before ship.
 - [wakegate](https://github.com/shitianfang/wakegate) - Experimental gate where Jev decides whether a timer or incoming event is worth resuming a sleeping agent's LLM; code skips only when Jev is confident and always wakes on user messages, errors, and a skip limit.
 
