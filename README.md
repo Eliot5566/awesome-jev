@@ -276,7 +276,6 @@ These projects explore Jev-like interfaces or open implementations. They are ind
 - [ruling](https://github.com/bradAGI/ruling) - Reproduction that serves Jev's `/v1/systemone` schema from a frozen MLX model or OpenAI-compatible endpoint by reading option probabilities from the logits, with option-order averaging, temperature calibration, and a harness that replays Jev's published answers on public judgments.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Formerly OpenJev: an independent study of typed option readout from frozen open models, with shared-prefix experiments and a WebGPU demo.
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Transforms compatible open-model logits into typed decisions without a separately trained classifier head; model compatibility is constrained.
-- [When a Judgment Layer’s Self-Reported Fields Lie](https://doi.org/10.5281/zenodo.22901853) - Independent measurement of Jev’s typed decisions as one of three judgment layers compared on a common item set, with a reproduction artifact and a 59-check verification suite; reports Jev’s verdict vocabulary collapsing to three reachable values and a truncation flag that does not track the clamp actually in force.
 
 ## Evaluation and calibration
 
@@ -299,6 +298,7 @@ Results belong to each project's dataset, prompts, model version, and measuremen
 - [Jevals.com](https://jevals.com/) - Independent benchmark that grades hosted Jev and six LLMs against human labels on the same Noul, Choice and Score questions (PubMedQA, Banking77, HelpSteer2), with per-decision logs in [jevals-data](https://github.com/Jevals/jevals-data).
 - [jevcal](https://github.com/abhixhek/jevcal) - Fits and drift-checks confidence thresholds against labeled data.
 - [Jev Capability Atlas](https://github.com/Zaious/jev-capability-atlas) - Bilingual evidence map with recorded API runs and reusable suites that separates its own tests, third-party benchmarks, and editorial synthesis.
+- [When a Judgment Layer's Self-Reported Fields Lie](https://doi.org/10.5281/zenodo.22901853) - Independent measurement of Jev's typed decisions as one of three judgment layers compared on a common item set, with a reproduction artifact and a 59-check verification suite; reports Jev's verdict vocabulary collapsing to three reachable values and a truncation flag that does not track the clamp actually in force.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - LLM gateway that mimics the System One output shape for comparison work.
 
 ## Guides and cookbooks
